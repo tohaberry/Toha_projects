@@ -1,0 +1,37 @@
+/* .border{
+    border: 1px solid;
+    width: 88px;
+    height: 98px;
+}
+ */
+.inner_d {
+    height: 141px;
+    width: 21%;
+    border: 1px solid brown;
+    float: left;
+    margin-left: 0 auto;
+    margin: 1% -1% 6% 5%;
+    border-radius: 22px;
+	position:relative;
+	box-shadow:10px 10px 42px 0 rgba(0,0,0,0.75);
+	background-color:#DDFFF7;
+	cursor:pointer;
+
+}
+
+
+img.img {
+    height: 118px;
+    width: 160px;
+    margin: 9px 41px;
+}
+.img:hover {
+    position:relative;
+  /*   top:-25px;
+    left:-35px; */
+    width:233px;
+    height:126;
+    /* display:block; */
+    z-index:999;
+	margin: 6px 9px;
+}

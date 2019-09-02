@@ -1,0 +1,91 @@
+
+ <!DOCTYPE html>
+<!-- This code is written by Abubakry Mohammed Teniola AKA Tohaberry  -->
+<!-- phone number: 08160386454, -->
+<html>
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="number_change.css">
+<head>
+<body>
+<b>Enter a word or a sentence</b>
+<br />
+<br />
+<textarea id='User_Enter' autofocus="autofocus"></textarea>
+<br><br>
+<input type='button' onclick='VowelsConsonants_Counts()' value='Count'>
+
+
+<br	/>
+<br	/>
+<br	/>
+<div class="results" id='word_string'></div> 
+<br />
+<br />
+<div class="results" id='vowels'> </div>
+<div class="results" id='consonants'> </div>
+
+
+
+<script>
+
+function VowelsConsonants_Counts()
+{
+var TextVar = document.getElementById('User_Enter').value;
+if (TextVar.length==0) {
+document.getElementById('User_Enter').focus();
+alert("Sorry cannot be empty");
+}
+else { 
+document.getElementById('word_string').innerHTML = "The word or sentence is <br />" 
++ "<font color='green'>" +TextVar + ".</font>";
+document.getElementById('vowels').innerHTML = "<font color='green'>Number of Vowels :</font> " 
++ vowel_count(TextVar);
+document.getElementById('consonants').innerHTML = " <font color='green'>Number of Consonants :</font> " 
++ consonants_count(TextVar);
+}
+}
+
+
+
+function vowel_count(str1)
+{
+var vowel_list = 'aeiouAEIOU';
+var vcount = 0;
+for(var x = 0; x <str1.length ; x++)
+{
+if (vowel_list.indexOf(str1[x]) !== -1)
+{
+vcount += 1;
+}
+}
+return vcount;
+}
+
+
+
+
+
+function consonants_count(str1)
+{
+var consonant_list = ' bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ';
+var c_count = 0;
+for(var x = 0; x <str1.length ; x++)
+{
+if (consonant_list.indexOf(str1[x]) !== -1)
+{
+c_count += 1;
+}
+}
+return c_count;
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>
+

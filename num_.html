@@ -1,0 +1,287 @@
+ <!DOCTYPE html>
+<html>
+<head>  
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="number_change.css">
+
+<!-- function changeImage(){
+if (document.getElementById("1").src == "number2.jpg")
+{
+document.getElementById("1").src ="number1.jpg";
+}
+else {
+document.getElementById("1").src = "number2.jpg";
+}
+}
+  -->
+<script src ="jquery-3.3.1.min.js"></script>
+  
+</head>
+
+
+<body>
+
+<!-- 
+<p>If you click on me, I teniola will disappear.</p>
+
+<p>Click me away!</p>
+
+<p>Click me too!</p>
+<img id="example" onclick="changeImage()" src="http://www.webtalkto-version-9dot2.webtalkto.com/wp-content/uploads/2013/11/image-in.png" width="400" height="418">
+ -->
+ 
+<h1> <center> welcome to our numbering page</center></h1><br>
+
+
+
+
+
+<div id ="f_cont">
+	<div class = "inner_d" id="first"><img class="img" id="i1" onclick="fadIndOut()" src="number1.jpg"> </div>
+	<div class = "inner_d" id="second"><img class="img" id="i2" onclick="fadIn()" src="number2.jpg"></div>
+	<div class = "inner_d" id="third"><img class="img"id="i3" onclick="fadOut()" src="number3.jpg"></div>
+</div>
+
+
+<div id ="s_cont">
+	<div class = "inner_d" id="fourth"><img class="img" id="i4"onclick="fadinOut()" src="number4.jpg"> </div>
+	<div class = "inner_d" id="fivth"><img  class="img" id="i5" onclick="fadOu()" src="number5.jpg"> </div>
+	<div class = "inner_d" id="sixth"><img class="img" id="i6" onclick="fadOud()"  src="number6.jpg"> </div>
+</div>
+
+
+<div id ="t_cont">
+	<div class = "inner_d" id="seventh"><img class="img" id="i7" onclick="fadOudt()"   src="number7.jpg"></div>
+	<div class = "inner_d" id="eight"><img class="img" id="i8" onclick="fadOudtin()" src="number 8.jpg"></div>
+	<div class = "inner_d" id="ninth"><img class="img" id="i9" onclick="fade()" src="number9.jpg"></div>
+</div>
+
+<br> 
+<br>
+
+
+<button id="random" onclick="displayImg()" > click to Randomize</button>
+
+
+
+<script>
+	/*let a = $("#i1").attr("src");
+	$('.img').click(function(){
+	if (a === 'number1.jpg'){
+	$("#i1").fadeOut();	
+	$("#i1").attr("src","number2.jpg");
+	$("#i1").fadeIn();
+	}else{
+		$("#i1").fadeOut();	
+		$("#i1").attr("src","number1.jpg");
+		$("#i1").fadeIn();
+	}
+	});*/
+	 var count = 0;
+	function fadIndOut(){
+	
+	 if(count == 0){
+	  console.log("11")
+		$("#i1").fadeOut();	
+		$("#i1").attr("src","number4.jpg");
+		$("#i1").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("00")
+		$("#i1").fadeOut();	
+		$("#i1").attr("src","number1.jpg");
+		$("#i1").fadeIn();
+		count--;
+	}
+  }
+
+   var count = 0;
+	function fadIn(){
+	
+	 if(count == 0){
+	  console.log("12")
+		$("#i2").fadeOut();	
+		$("#i2").attr("src","number 8.jpg");
+		$("#i2").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("01")
+		$("#i2").fadeOut();	
+		$("#i2").attr("src","number2.jpg");
+		$("#i2").fadeIn();
+		count--;
+	}
+  }
+  var count = 0;
+	function fadOut(){
+	
+	 if(count == 0){
+	  console.log("13")
+		$("#i3").fadeOut();	
+		$("#i3").attr("src","number9.jpg");
+		$("#i3").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("02")
+		$("#i3").fadeOut();	
+		$("#i3").attr("src","number3.jpg");
+		$("#i3").fadeIn();
+		count--;
+	}
+  }
+ var count = 0;
+	function fadinOut(){
+	
+	 if(count == 0){
+	  console.log("14")
+		$("#i4").fadeOut();	
+		$("#i4").attr("src","number1.jpg");
+		$("#i4").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("03")
+		$("#i4").fadeOut();	
+		$("#i4").attr("src","number4.jpg");
+		$("#i4").fadeIn();
+		count--;
+	}
+  }
+
+  
+  
+   var count = 0;
+	function fadOu(){
+	
+	 if(count == 0){
+	  console.log("15")
+		$("#i5").fadeOut();	
+		$("#i5").attr("src","number6.jpg");
+		$("#i5").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("04")
+		$("#i5").fadeOut();	
+		$("#i5").attr("src","number5.jpg");
+		$("#i5").fadeIn();
+		count--;
+	}
+  }
+
+  
+  
+   var count = 0;
+	function fadOud(){
+	
+	 if(count == 0){
+	  console.log("16")
+		$("#i6").fadeOut();	
+		$("#i6").attr("src","number5.jpg");
+		$("#i6").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("05")
+		$("#i6").fadeOut();	
+		$("#i6").attr("src","number6.jpg");
+		$("#i6").fadeIn();
+		count--;
+	}
+  }
+
+   var count = 0;
+	function fadOudt(){
+	
+	 if(count == 0){
+	  console.log("17")
+		$("#i7").fadeOut();	
+		$("#i7").attr("src","number3.jpg");
+		$("#i7").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("06")
+		$("#i7").fadeOut();	
+		$("#i7").attr("src","number7.jpg");
+		$("#i7").fadeIn();
+		count--;
+	}
+  }
+   var count = 0;
+	function fadOudtin(){
+	
+	 if(count == 0){
+	  console.log("18")
+		$("#i8").fadeOut();	
+		$("#i8").attr("src","number2.jpg");
+		$("#i8").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("07")
+		$("#i8").fadeOut();	
+		$("#i8").attr("src","number 8.jpg");
+		$("#i8").fadeIn();
+		count--;
+	}
+  }
+  
+  var count = 0;
+	function fade(){
+	
+	 if(count == 0){
+	  console.log("19")
+		$("#i9").fadeOut();	
+		$("#i9").attr("src","number7.jpg");
+		$("#i9").fadeIn();
+		count++;
+	 }
+	 else{
+        console.log("08")
+		$("#i9").fadeOut();	
+		$("#i9").attr("src","number9.jpg");
+		$("#i9").fadeIn();
+		count--;
+	}
+  }
+  
+ 
+	var imgSrc=[
+		'number1.jpg',
+		'number2.jpg',
+		'number3.jpg',
+		'number4.jpg',
+		'number5.jpg',
+		'number6.jpg',
+		'number7.jpg',
+		'number 8.jpg',
+		'number9.jpg'
+	];
+	
+
+function displayImg(){
+    var num = Math.floor(Math.random() * (imgSrc.length));
+    document.canvas.src="img/"+imgSrc[num];
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+
+  
+</script>
+
+</body>
+</html>
